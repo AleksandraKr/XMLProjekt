@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<games>
+	<game id=1>
+		<name type=RPG></name>
+		<platform></platform>
+		<producer></producer>
+		<year></year>
+		<language><language>
+		<description>
+			<short-desc></short-desc>
+			<story></story>
+		<description>
+		<mode></mode>
+	</game>
+</games>
