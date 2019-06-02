@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE strona SYSTEM "gry.dtd">
 <strona>
 	<gry>
 		<gra>
@@ -15,7 +16,7 @@
 				<fabula>Akcja toczy się 200 lat po wydarzeniach opowiedzianych w grze Oblivion. 
 				Gracze wcielają się w jednego z ostatnich bohaterów parających się profesją dovahkiina, czyli łowcy smoków.
 				</fabula>
-			<opis>
+			</opis>
 			<tryb>single player</tryb>
 		</gra>
 		<gra>
@@ -33,7 +34,7 @@
 				w którym trójka niecodziennych bohaterów prowadzi niebezpieczne życie. 
 				Objęty programem ochrony świadków były rabuś Michael wiedzie spokojny żywot do dnia, w którym nakrywa żonę na zdradzie z instruktorem tenisa. 
 				</fabula>
-			<opis>
+			</opis>
 			<tryb>single player</tryb>
 		</gra>
 		<gra>
@@ -51,7 +52,7 @@
 				Główna oś fabularna obraca się wokół kilku oddzielnych wątków. Wśród nich znalazło się poszukiwanie utraconej miłości 
 				Geralta oraz inwazja Nilfgaardu na Królestwa Północy.
 				</fabula>
-			<opis>
+			</opis>
 			<tryb>single player</tryb>
 		</gra>
 		<gra>
@@ -67,7 +68,7 @@
 				<fabula>Gra pozwala nam wcielić się w przedstawicieli starożytnej rasy Tenno, która wywodzi się od na pozór 
 				zwyczajnych ludzkich dzieci, które zostały obdarzone nieprzewidywalnymi mocami przez kontakt z Pustką (ang. The Void). 
 				</fabula>
-			<opis>
+			</opis>
 			<tryb>massive online multiplayer</tryb>
 		</gra>
 		<gra>
@@ -84,7 +85,7 @@
 				co pozostawiło na niej sporo nieprzyjaznych bestii oraz „potęgę hymnu” – narzędzie kreacji świata, które każdy pragnie posiąść i ujarzmić.  
 				Gracze wcielają się w tzw. wolnych strzelców (ang. Freelancers), czyli śmiałków wyposażonych w pancerze wspomagane klasy Javelin. 
 				</fabula>
-			<opis>
+			</opis>
 			<tryb>single / multiplayer</tryb>
 		</gra>
 	</gry>
