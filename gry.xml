@@ -1,15 +1,99 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<games>
-	<game id=1>
-		<name type=RPG></name>
-		<platform></platform>
-		<producer></producer>
-		<year></year>
-		<language><language>
-		<description>
-			<short-desc></short-desc>
-			<story></story>
-		<description>
-		<mode></mode>
-	</game>
-</games>
+<strona>
+	<gry>
+		<gra>
+			<id>r001</id>
+			<name>The Elder Scrolls V: Skyrim</name>
+			<typ>RPG</typ>
+			<platforma>PC/X360/PS3</platforma>
+			<producent>Bethesda Softworks</producent>
+			<rok>2011</rok>
+			<opis>
+				<krotki_opis>The Elder Scrolls V: Skyrim to kolejna część serii cRPG autorstwa zespołu Bethesda Softworks. 
+				Ponownie odwiedzamy w niej kontynent Tamriel, a fabuła tym razem obraca się wokół powrotu do tej krainy pradawnej rasy smoków.
+				</krotki_opis>
+				<fabula>Akcja toczy się 200 lat po wydarzeniach opowiedzianych w grze Oblivion. 
+				Gracze wcielają się w jednego z ostatnich bohaterów parających się profesją dovahkiina, czyli łowcy smoków.
+				</fabula>
+			<opis>
+			<tryb>single player</tryb>
+		</gra>
+		<gra>
+			<id>a002</id>
+			<name>Grand Theft Auto V</name>
+			<typ>Akcji</typ>
+			<platforma>PC/X360/XONE/PS3/PS4</platforma>
+			<producent>Rockstar Games</producent>
+			<rok>2013</rok>
+			<opis>
+				<krotki_opis>Grand Theft Auto V – kolejna odsłona kultowej serii gangsterskich 
+				gier akcji studia Rockstar North – zabiera nas do świata wzorowanego na Kalifornii. 
+				</krotki_opis>
+				<fabula>Akcja Grand Theft Auto V na PC, PS4 itd. rozgrywa się w wielkim otwartym mieście Los Santos, 
+				w którym trójka niecodziennych bohaterów prowadzi niebezpieczne życie. 
+				Objęty programem ochrony świadków były rabuś Michael wiedzie spokojny żywot do dnia, w którym nakrywa żonę na zdradzie z instruktorem tenisa. 
+				</fabula>
+			<opis>
+			<tryb>single player</tryb>
+		</gra>
+		<gra>
+			<id>r003</id>
+			<name>Wiedźmin 3: Dziki Gon</name>
+			<typ>RPG</typ>
+			<platforma>PC/XONE/PS4</platforma>
+			<producent>CD Projekt RED</producent>
+			<rok>2015</rok>
+			<opis>
+				<krotki_opis>Wiedźmin 3: Dziki Gon (The Witcher 3: Wild Hunt) na komputery osobiste to trzecia odsłona popularnej 
+				serii gier RPG akcji opartej na prozie Andrzeja Sapkowskiego.
+				</krotki_opis>
+				<fabula>W grze Wiedźmin 3: Dziki Gon ponownie wcielamy się w znanego z wcześniejszych odsłon wiedźmina. 
+				Główna oś fabularna obraca się wokół kilku oddzielnych wątków. Wśród nich znalazło się poszukiwanie utraconej miłości 
+				Geralta oraz inwazja Nilfgaardu na Królestwa Północy.
+				</fabula>
+			<opis>
+			<tryb>single player</tryb>
+		</gra>
+		<gra>
+			<id>a004</id>
+			<name>Warframe</name>
+			<typ>Akcji</typ>
+			<platforma>PC/XONE/PS4</platforma>
+			<producent>Digital Extremes</producent>
+			<rok>2013</rok>
+			<opis>
+				<krotki_opis>Warframe jest sieciową, kooperacyjną grą akcji, która powstała pod okiem specjalistów ze studia Digital Extremes
+				</krotki_opis>
+				<fabula>Gra pozwala nam wcielić się w przedstawicieli starożytnej rasy Tenno, która wywodzi się od na pozór 
+				zwyczajnych ludzkich dzieci, które zostały obdarzone nieprzewidywalnymi mocami przez kontakt z Pustką (ang. The Void). 
+				</fabula>
+			<opis>
+			<tryb>massive online multiplayer</tryb>
+		</gra>
+		<gra>
+			<id>a005</id>
+			<name>Anthem</name>
+			<typ>Akcji</typ>
+			<platforma>PC/XONE/PS4</platforma>
+			<producent>BioWare Corporation</producent>
+			<rok>2019</rok>
+			<opis>
+				<krotki_opis>Anthem to kooperacyjna strzelanka TPP z pierwiastkiem MMO, wzbogacona o elementy RPG i osadzona w klimatach science fiction
+				</krotki_opis>
+				<fabula>Gra przenosi nas na odległą planetę, porzuconą przez pradawnych bogów w czasie jej tworzenia, 
+				co pozostawiło na niej sporo nieprzyjaznych bestii oraz „potęgę hymnu” – narzędzie kreacji świata, które każdy pragnie posiąść i ujarzmić.  
+				Gracze wcielają się w tzw. wolnych strzelców (ang. Freelancers), czyli śmiałków wyposażonych w pancerze wspomagane klasy Javelin. 
+				</fabula>
+			<opis>
+			<tryb>single / multiplayer</tryb>
+		</gra>
+	</gry>
+	<nagrody>
+		<nagroda id_gry="r001">
+			<nazwa>Electronic Gaming Monthly</nazwa>
+		</nagroda>
+		<nagroda id_gry="a002">
+			<nazwa>Edge Game of the Year</nazwa>
+		</nagroda>
+	</nagrody>
+</strona>
