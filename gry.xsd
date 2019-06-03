@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs='http://www.w3.org/2001/XMLSchema'
+	targetNamespace="http://my.com" xmlns:my="http://my.com">
+	
+	<xs:SimpleType name="idType">
+      <xs:restriction base="xs:string">
+           <xs:pattern value="[a-z][0-9]{3}" />
+      </xs:restriction>
+   </xs:SimpleType>
+   
+   <xs:SimpleType name="typType">
+      <xs:restriction base="xs:string">
+           <xs:pattern value="RPG|Akcji|FPP|Przygodowe" />
+      </xs:restriction>
+   </xs:SimpleType>
+   
+   <xs:SimpleType name="platformaType">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="PC"/>
+			<xs:enumeration value="X360"/>
+			<xs:enumeration value="PS3"/>
+			<xs:enumeration value="PS4"/>
+			<xs:enumeration value="XONE"/>
+			<xs:enumeration value="PC/X360/XONE/PS3/PS4"/>
+			<xs:enumeration value="PC/X360/PS3"/>
+			<xs:enumeration value="PC/XONE/PS4"/>
+		</xs:restriction>
+   </xs:SimpleType>
+   
+   <xs:SimpleType name="rokType">
+      <xs:restriction base="xs:string">
+           <xs:pattern value="[0-9]{4}" />
+      </xs:restriction>
+   </xs:SimpleType>
+   
+   <xs:SimpleType name="platformaType">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="PC"/>
+			<xs:enumeration value="X360"/>
+			<xs:enumeration value="PS3"/>
+			<xs:enumeration value="PS4"/>
+			<xs:enumeration value="XONE"/>
+			<xs:enumeration value="PC/X360/XONE/PS3/PS4"/>
+			<xs:enumeration value="PC/X360/PS3"/>
+			<xs:enumeration value="PC/XONE/PS4"/>
+		</xs:restriction>
+   </xs:SimpleType>
+   
+   <xs:SimpleType name="trybType">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="massive online multiplayer"/>
+			<xs:enumeration value="single/multiplayer"/>
+			<xs:enumeration value="multiplayer"/>
+			<xs:enumeration value="single player"/>
+		</xs:restriction>
+   </xs:SimpleType>
+   
+   <xs:ComplexType name="opisType">
+       <xs:sequence>
+           <xs:element name="krotki_opis" type="xs:string" />
+           <xs:element name="fabula" type="xs:string" />
+       </xs:sequence>
+    </xs:ComplexType>
+	
+	<xs:ComplexType name="graType">
+       <xs:sequence>
+           <xs:element name="id" type="idType" />
+           <xs:element name="nazwa" type="xs:string" />
+		   <xs:element name="typ" type="typType" />
+		   <xs:element name="platforma" type="platformaType" />
+		   <xs:element name="producent" type="xs:string" />
+		   <xs:element name="rok" type="rokType" />
+		   <xs:element name="opis" type="opisType" />
+		   <xs:element name="tryb" type="trybType" />
+       </xs:sequence>
+    </xs:ComplexType>
+	
+	<xs:ComplexType name="gryType">
+       <xs:sequence>
+           <xs:element name="gra" type="graType" maxOccurs="unbounded"/>
+       </xs:sequence>
+    </xs:ComplexType>
+	
+</xs:schema>

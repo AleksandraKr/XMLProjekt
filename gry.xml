@@ -4,7 +4,7 @@
 	<gry>
 		<gra>
 			<id>r001</id>
-			<name>The Elder Scrolls V: Skyrim</name>
+			<nazwa>The Elder Scrolls V: Skyrim</nazwa>
 			<typ>RPG</typ>
 			<platforma>PC/X360/PS3</platforma>
 			<producent>Bethesda Softworks</producent>
@@ -21,7 +21,7 @@
 		</gra>
 		<gra>
 			<id>a002</id>
-			<name>Grand Theft Auto V</name>
+			<nazwa>Grand Theft Auto V</nazwa>
 			<typ>Akcji</typ>
 			<platforma>PC/X360/XONE/PS3/PS4</platforma>
 			<producent>Rockstar Games</producent>
@@ -39,7 +39,7 @@
 		</gra>
 		<gra>
 			<id>r003</id>
-			<name>Wiedźmin 3: Dziki Gon</name>
+			<nazwa>Wiedźmin 3: Dziki Gon</nazwa>
 			<typ>RPG</typ>
 			<platforma>PC/XONE/PS4</platforma>
 			<producent>CD Projekt RED</producent>
@@ -57,7 +57,7 @@
 		</gra>
 		<gra>
 			<id>a004</id>
-			<name>Warframe</name>
+			<nazwa>Warframe</nazwa>
 			<typ>Akcji</typ>
 			<platforma>PC/XONE/PS4</platforma>
 			<producent>Digital Extremes</producent>
@@ -73,7 +73,7 @@
 		</gra>
 		<gra>
 			<id>a005</id>
-			<name>Anthem</name>
+			<nazwa>Anthem</nazwa>
 			<typ>Akcji</typ>
 			<platforma>PC/XONE/PS4</platforma>
 			<producent>BioWare Corporation</producent>
@@ -86,15 +86,15 @@
 				Gracze wcielają się w tzw. wolnych strzelców (ang. Freelancers), czyli śmiałków wyposażonych w pancerze wspomagane klasy Javelin. 
 				</fabula>
 			</opis>
-			<tryb>single / multiplayer</tryb>
+			<tryb>single/multiplayer</tryb>
 		</gra>
 	</gry>
 	<nagrody>
 		<nagroda id_gry="r001">
-			<nazwa>Electronic Gaming Monthly</nazwa>
+			<nazwa_nagrody>Electronic Gaming Monthly</nazwa_nagrody>
 		</nagroda>
 		<nagroda id_gry="a002">
-			<nazwa>Edge Game of the Year</nazwa>
+			<nazwa_nagrody>Edge Game of the Year</nazwa_nagrody>
 		</nagroda>
 	</nagrody>
 </strona>

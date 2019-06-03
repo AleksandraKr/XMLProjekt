@@ -1,66 +1,20 @@
 <?xml encoding="UTF-8"?>
 
 <!ELEMENT strona (gry,nagrody)>
-<!ATTLIST strona
-  xmlns CDATA #FIXED ''>
 
 <!ELEMENT gry (gra)+>
-<!ATTLIST gry
-  xmlns CDATA #FIXED ''>
-
 <!ELEMENT nagrody (nagroda)+>
-<!ATTLIST nagrody
-  xmlns CDATA #FIXED ''>
-
-<!ELEMENT gra (id,name,typ,platforma,producent,rok,opis,tryb)>
-<!ATTLIST gra
-  xmlns CDATA #FIXED ''>
-
-<!ELEMENT nagroda (nazwa)>
-<!ATTLIST nagroda
-  xmlns CDATA #FIXED ''
-  id_gry NMTOKEN #REQUIRED>
-
+<!ELEMENT gra (id,nazwa,typ,platforma,producent,rok,opis,tryb)>
+<!ELEMENT nagroda (nazwa_nagrody)>
 <!ELEMENT id (#PCDATA)>
-<!ATTLIST id
-  xmlns CDATA #FIXED ''>
-
-<!ELEMENT name (#PCDATA)>
-<!ATTLIST name
-  xmlns CDATA #FIXED ''>
-
-<!ELEMENT typ (#PCDATA)>
-<!ATTLIST typ
-  xmlns CDATA #FIXED ''>
-
-<!ELEMENT platforma (#PCDATA)>
-<!ATTLIST platforma
-  xmlns CDATA #FIXED ''>
-
-<!ELEMENT producent (#PCDATA)>
-<!ATTLIST producent
-  xmlns CDATA #FIXED ''>
-
-<!ELEMENT rok (#PCDATA)>
-<!ATTLIST rok
-  xmlns CDATA #FIXED ''>
-
-<!ELEMENT opis (krotki_opis,fabula)>
-<!ATTLIST opis
-  xmlns CDATA #FIXED ''>
-
-<!ELEMENT tryb (#PCDATA)>
-<!ATTLIST tryb
-  xmlns CDATA #FIXED ''>
-
 <!ELEMENT nazwa (#PCDATA)>
-<!ATTLIST nazwa
-  xmlns CDATA #FIXED ''>
-
+<!ELEMENT typ (#PCDATA)>
+<!ELEMENT platforma (#PCDATA)>
+<!ELEMENT producent (#PCDATA)>
+<!ELEMENT rok (#PCDATA)>
+<!ELEMENT opis (krotki_opis,fabula)>
+<!ELEMENT tryb (#PCDATA)>
+<!ELEMENT nazwa_nagrody (#PCDATA)>
 <!ELEMENT krotki_opis (#PCDATA)>
-<!ATTLIST krotki_opis
-  xmlns CDATA #FIXED ''>
-
 <!ELEMENT fabula (#PCDATA)>
-<!ATTLIST fabula
-  xmlns CDATA #FIXED ''>
+
