@@ -1,0 +1,58 @@
+strona{
+	background-color: black;
+}
+
+gra{
+	display: block;
+	color: white;
+	margin:20px;
+	background-color: 	#708090;
+	border-style: solid;
+	border-color: white;
+	position:relative;
+	padding-bottom: 30px;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+id{
+	display: block;
+	color: 	#708090;
+	margin:10px;
+}
+
+nazwa{
+	display: block;
+	margin:10px;
+	font-size: 25px;
+	color: #B22222;
+}
+
+typ, platforma{
+	margin:10px;
+}
+
+producent{
+	display: block;
+	margin:10px;
+	font-style: italic;
+}
+
+rok{
+	display: block;
+	margin:10px;
+}
+
+opis{
+	display: block;
+	margin:10px;
+}
+
+tryb{
+	display: block;
+	margin:10px;
+}
+
+gra:hover{
+	opacity: 0.8;
+}
