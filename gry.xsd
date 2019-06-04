@@ -1,20 +1,19 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<xs:schema xmlns:xs='http://www.w3.org/2001/XMLSchema'
-	targetNamespace="http://my.com" xmlns:my="http://my.com">
+<?xml version="1.0" encoding="UTF-8" ?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
 	
-	<xs:SimpleType name="idType">
+	<xs:simpleType name="idType">
       <xs:restriction base="xs:string">
            <xs:pattern value="[a-z][0-9]{3}" />
       </xs:restriction>
-   </xs:SimpleType>
+   </xs:simpleType>
    
-   <xs:SimpleType name="typType">
+   <xs:simpleType name="typType">
       <xs:restriction base="xs:string">
            <xs:pattern value="RPG|Akcji|FPP|Przygodowe" />
       </xs:restriction>
-   </xs:SimpleType>
+   </xs:simpleType>
    
-   <xs:SimpleType name="platformaType">
+   <xs:simpleType name="platformaType">
 		<xs:restriction base="xs:string">
 			<xs:enumeration value="PC"/>
 			<xs:enumeration value="X360"/>
@@ -25,44 +24,31 @@
 			<xs:enumeration value="PC/X360/PS3"/>
 			<xs:enumeration value="PC/XONE/PS4"/>
 		</xs:restriction>
-   </xs:SimpleType>
+   </xs:simpleType>
    
-   <xs:SimpleType name="rokType">
+   <xs:simpleType name="rokType">
       <xs:restriction base="xs:string">
            <xs:pattern value="[0-9]{4}" />
       </xs:restriction>
-   </xs:SimpleType>
+   </xs:simpleType>
    
-   <xs:SimpleType name="platformaType">
-		<xs:restriction base="xs:string">
-			<xs:enumeration value="PC"/>
-			<xs:enumeration value="X360"/>
-			<xs:enumeration value="PS3"/>
-			<xs:enumeration value="PS4"/>
-			<xs:enumeration value="XONE"/>
-			<xs:enumeration value="PC/X360/XONE/PS3/PS4"/>
-			<xs:enumeration value="PC/X360/PS3"/>
-			<xs:enumeration value="PC/XONE/PS4"/>
-		</xs:restriction>
-   </xs:SimpleType>
-   
-   <xs:SimpleType name="trybType">
+   <xs:simpleType name="trybType">
 		<xs:restriction base="xs:string">
 			<xs:enumeration value="massive online multiplayer"/>
 			<xs:enumeration value="single/multiplayer"/>
 			<xs:enumeration value="multiplayer"/>
 			<xs:enumeration value="single player"/>
 		</xs:restriction>
-   </xs:SimpleType>
+   </xs:simpleType>
    
-   <xs:ComplexType name="opisType">
+   <xs:complexType name="opisType">
        <xs:sequence>
            <xs:element name="krotki_opis" type="xs:string" />
            <xs:element name="fabula" type="xs:string" />
        </xs:sequence>
-    </xs:ComplexType>
+    </xs:complexType>
 	
-	<xs:ComplexType name="graType">
+	<xs:complexType name="graType">
        <xs:sequence>
            <xs:element name="id" type="idType" />
            <xs:element name="nazwa" type="xs:string" />
@@ -73,12 +59,45 @@
 		   <xs:element name="opis" type="opisType" />
 		   <xs:element name="tryb" type="trybType" />
        </xs:sequence>
-    </xs:ComplexType>
+    </xs:complexType>
 	
-	<xs:ComplexType name="gryType">
+	<xs:complexType name="gryType">
        <xs:sequence>
            <xs:element name="gra" type="graType" maxOccurs="unbounded"/>
        </xs:sequence>
-    </xs:ComplexType>
+    </xs:complexType>
+	
+	<xs:complexType name="nagrodaType">
+       <xs:sequence>
+           <xs:element name="nazwa_nagrody" type="xs:string"/>
+       </xs:sequence>
+	   <xs:attribute name="id_gry" type="idType" use="required"/>
+    </xs:complexType>
+	
+	<xs:complexType name="nagrodyType">
+       <xs:sequence>
+           <xs:element name="nagroda" type="nagrodaType" maxOccurs="unbounded"/>
+       </xs:sequence>
+    </xs:complexType>
+	
+	<xs:complexType name="stronaType">
+       <xs:sequence>
+			<xs:element name="gry" type="gryType"/>
+			<xs:element name="nagrody" type="nagrodyType"/>
+       </xs:sequence>
+    </xs:complexType>
+	
+	<xs:element name="strona" type="stronaType">
+		<xs:key name="graKey"  >  
+			<xs:selector xpath="gry/gra" />  
+			<xs:field xpath="id" />  
+		</xs:key> 
+		<xs:keyref name="nagrodaKeyref" refer="graKey">  
+			<xs:selector xpath="nagrody/nagroda" />  
+			<xs:field xpath="@id_gry" />  
+		</xs:keyref> 
+	</xs:element>
+
+
 	
 </xs:schema>
